@@ -29,7 +29,8 @@
       "declaration": true,
       "assignment": true,
       "return": true
-    }]
+    }],
+    // "react/jsx-curly-brace-presence": "off"
   },
   "plugins": [
     "react"
