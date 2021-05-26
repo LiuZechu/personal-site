@@ -83,21 +83,21 @@
 }
 
 .degree-container {
-	h4 {
+	h2 {
 		font-weight: normal;
-	}
-
-	.degree {
-		margin-bottom: .1em;
-		text-transform: none;
-		letter-spacing: 0.16em;
-		font-size: .8em;
 	}
 
 	.school {
 		text-transform: none;
-		padding-top: 0.3em;
-		margin-bottom: 1em;
+		padding-top: 0.1em;
+		margin-bottom: 0.3em;
+	}
+
+	.degree {
+		margin-bottom: 0.5em;
+		text-transform: none;
+		letter-spacing: 0.16em;
+		font-size: .8em;
 	}
 }
 

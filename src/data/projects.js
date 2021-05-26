@@ -1,47 +1,49 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
+    title: 'GitHub Issue Auto-labeller',
+    subtitle: 'Natural Lanuage Processing with information extraction and text categorisation',
+    link: 'https://github.com/larrylawl/auto-github-issue-labeller-action',
     image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
+    date: 'Mar 2021 - Apr 2021',
     desc:
-      'Built for a social impact hackathon. '
-      + 'NearestDollar connected to your bank accounts, credit cards, '
-      + 'or debit cards and rounded up your purchases to donate the balance to '
-      + 'the charity of your choice.',
+      'Automatically labelling GitHub issues with NLP. '
+      + 'XXXX, '
+      + 'XXXX '
+      + 'XXXX.',
   },
   {
-    title: 'Harvest',
-    subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
-    link: 'https://devpost.com/software/harvest',
+    title: 'Playlister: Music Recommendation',
+    subtitle: 'Machine Learning, audio processing, image classfication',
+    link: 'https://drive.google.com/file/d/1-PDZY--h29a1tIOaBdP00rnxar4Kqnug/view',
     image: '/images/projects/harvest.jpg',
-    date: '2015-09-20',
+    date: 'Sep 2020 - Dec 2020',
     desc:
-      'Won ~ $7000 in prizes for an advanced, low cost monitoring solution '
-      + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
-      + 'and nutrient deficiencies at an affordable price for the developing world.',
+      'Worked on a Machine Learning project that aims to recommend songs to users. '
+      + 'Mainly in charge of implementing Convolutional Neural Network '
+      + 'for music genre classification.',
   },
   {
-    title: 'Space Potato',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
-    link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2015-06-28',
-    desc:
-      'Launched a potato battery powered weather balloon with two cameras '
-      + 'and gps transponder. Resulting photos were published in a coffee table book. '
-      + 'You can email me for a copy.',
-  },
-  {
-    title: 'Cat Detector',
-    subtitle: 'A convolutional neural network to classify cats! (and dogs)',
+    title: 'Dish Out',
+    subtitle: 'React web app for dish reviews and recommendations in Singapore!',
+    link: 'https://dishout.co/',
     image: '/images/projects/catdetector.jpg',
-    date: '2015-05-15',
+    date: 'Sep 2020 - Dec 2020',
     desc:
-      'Trained a convolutional neural network to classify between ~ 80 cats breeds. '
-      + 'Over 60,000 cats were classified before server bills made the project too expensive '
-      + 'to continue hosting.',
+      'Worked with teammates and developed a web app that focuses on '
+      + 'dish reviews and recommendations in Singapore. (completed under CS3216)',
+  },
+  {
+    title: 'Relentless',
+    subtitle: 'iOS co-op game',
+    link: 'https://github.com/relentless-game/Relentless',
+    image: '/images/projects/spacepotato.jpg',
+    date: 'Mar 2020 - May 2020',
+    desc:
+      'Developed with teammates Relentless, a co-op multiplayer iOS game '
+      + 'across multiple iOS devices over the network, '
+      + 'where players work together to deliver items to households. '
+      + '(completed under CS3217)',
   },
 ];
 

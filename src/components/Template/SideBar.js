@@ -21,7 +21,7 @@ const SideBar = () => (
       <h2>About</h2>
       <p>Hi, I&apos;m Zechu. I like learning and creating new things.
         I&apos;m a senior undergraduate student in the <a href="https://nus.edu.sg/">National University of Singapore (NUS)</a>, graduating in June 2022.
-        I major in Computer Science, and I&apos;m in the <a href="https://www.usp.nus.edu.sg/">Univeristy Scholars Programme (USP)</a>.
+        I major in Computer Science, and I&apos;m also in the <a href="https://www.usp.nus.edu.sg/">Univeristy Scholars Programme (USP)</a>.
       </p>
       <ul className="actions">
         <li>
