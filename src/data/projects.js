@@ -4,7 +4,7 @@ const data = [
     title: 'GitHub Issue Auto-labeller',
     subtitle: 'Natural Lanuage Processing with information extraction and text categorisation',
     link: 'https://github.com/larrylawl/auto-github-issue-labeller-action',
-    image: '/images/projects/nearestdollar.jpg',
+    image: '/images/projects/github.gif',
     date: 'Mar 2021 - Apr 2021',
     desc:
       'Automatically labelling GitHub issues with NLP. '
@@ -16,7 +16,7 @@ const data = [
     title: 'Playlister: Music Recommendation',
     subtitle: 'Machine Learning, audio processing, image classfication',
     link: 'https://drive.google.com/file/d/1-PDZY--h29a1tIOaBdP00rnxar4Kqnug/view',
-    image: '/images/projects/harvest.jpg',
+    image: '/images/projects/playlister.png',
     date: 'Sep 2020 - Dec 2020',
     desc:
       'Worked on a Machine Learning project that aims to recommend songs to users. '
@@ -27,7 +27,7 @@ const data = [
     title: 'Dish Out',
     subtitle: 'React web app for dish reviews and recommendations in Singapore!',
     link: 'https://dishout.co/',
-    image: '/images/projects/catdetector.jpg',
+    image: '/images/projects/dishout.gif',
     date: 'Sep 2020 - Dec 2020',
     desc:
       'Worked with teammates and developed a web app that focuses on '
@@ -37,7 +37,7 @@ const data = [
     title: 'Relentless',
     subtitle: 'iOS co-op game',
     link: 'https://github.com/relentless-game/Relentless',
-    image: '/images/projects/spacepotato.jpg',
+    image: '/images/projects/relentless.jpg',
     date: 'Mar 2020 - May 2020',
     desc:
       'Developed with teammates Relentless, a co-op multiplayer iOS game '
