@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import CategoryButton from './Skills/CategoryButton';
-import SkillBar from './Skills/SkillBar';
+import SkillTile from './Skills/SkillTile';
 
 const handleProps = ({ categories, skills }) => ({
   buttons: categories.map((cat) => cat.name).reduce((obj, key) => ({
@@ -35,7 +35,7 @@ class Skills extends Component {
       return ret;
     }).filter((skill) => (actCat === 'All' || skill.category.includes(actCat)))
       .map((skill) => (
-        <SkillBar
+        <SkillTile
           categories={this.props.categories}
           data={skill}
           key={skill.title}
