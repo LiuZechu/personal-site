@@ -41,7 +41,7 @@ const skills = [
   },
   {
     title: 'SQL/PostgreSQL',
-    category: [BACKEND],
+    category: [BACKEND, LANGUAGES],
   },
   {
     title: 'Express.JS',
