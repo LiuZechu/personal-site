@@ -7,6 +7,11 @@ const Degree = ({ data }) => (
       <h2 className="school"><a href={data.link}>{data.school}</a></h2>
       <p className="degree">{data.degree}, {data.year}</p>
     </header>
+    <ul className="points">
+      {data.points.map((point) => (
+        <li key={point}>{point}</li>
+      ))}
+    </ul>
   </article>
 );
 
@@ -16,6 +21,7 @@ Degree.propTypes = {
     degree: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
     year: PropTypes.number.isRequired,
+    points: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };
 

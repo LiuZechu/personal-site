@@ -18,9 +18,9 @@ const Stats = () => (
           <h2 data-testid="heading"><Link to="/stats">Stats</Link></h2>
         </div>
       </header>
+      <Site />
       <Personal />
       <Travel />
-      <Site />
     </article>
   </Main>
 );

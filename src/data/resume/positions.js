@@ -5,10 +5,8 @@ const positions = [
     link: 'https://www.cloudflare.com/',
     daterange: 'May 2021 - Aug 2021',
     points: [
-      'AAA.',
-      'BBB.',
-      'CCC.',
-      'DDD.',
+      'Currently interning.',
+      'Will update soon.',
     ],
   },
   {
