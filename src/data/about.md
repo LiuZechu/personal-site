@@ -2,7 +2,7 @@
 # Intro
 
 My name's Zechu (Anglicised pronunciation: /z-uh·ch-oo/, or zéchǔ in Mandarin).
-I enjoy learning new technologies and exploring exciting ideas. I study Computer Science, and I like cool things powered by the computer, such as machine learning, networks, software engineering, and artificial intelligence. My (cliché but genuine) motivation is to make the world a better place through computing. Please feel free to get in touch if you would like to talk about anything.
+I enjoy learning new technologies and exploring exciting ideas. I study Computer Science, and I like cool things powered by the computer, such as machine learning, networks, software engineering, and artificial intelligence. My dream is to make the world a better place through computing. Please feel free to get in touch if you would like to talk about anything.
 
 # Currently
 
