@@ -39,6 +39,10 @@ const data = [
     link: 'https://github.com/LiuZechu/personal-site/commits',
     format: (x) => dayjs(x).format('MMMM DD, YYYY'),
   },
+  {
+    label: 'Page views (based on Google Analytics; not updated real-time)',
+    value: '2',
+  },
   // {
   //   // TODO update this with a pre-commit hook
   //   /* find . | grep ".js" | grep -vE ".min.js|node_modules|.git|.json" |

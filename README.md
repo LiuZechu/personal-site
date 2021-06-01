@@ -1,4 +1,5 @@
 # Personal Website
+See: [zechu.me](https://zechu.me).
 
 Welcome to my personal website built with React and deployed on GitHub Pages. You may access it at [zechu.me](https://zechu.me/). 
 
