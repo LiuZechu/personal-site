@@ -66,9 +66,7 @@ class Projects extends Component {
   }
 
   getNumActiveProjects() {
-    return this.getRelevantProjects()
-      .filter((project) => (actCat === 'All' || project.category.includes(actCat)))
-      .length;
+    return this.getRelevantProjects().length;
   }
 
   render() {
@@ -87,7 +85,9 @@ class Projects extends Component {
           <div className="skill-button-container">
             {this.getButtons()}
           </div>
-          <p>Scroll down to view all <b>{this.getNumActiveProjects()} projects</b> in this category.</p>
+          <p>
+            Scroll down to view all <b>{this.getNumActiveProjects()} projects</b> in this category.
+          </p>
           {this.getCells()}
         </article>
       </Main>

@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
-import BlogTitle from '../components/Blog/BlogTitle';
+import BlogRow from '../components/Blog/BlogRow';
 
-import blogTitles from '../data/blog/blog_titles';
+import blogDescripts from '../data/blog/blog_descripts';
 
 const Blog = () => (
   <Main
@@ -18,10 +18,10 @@ const Blog = () => (
           <p>&ldquo;Knowledge increases by sharing but not by saving.&rdquo;</p>
         </div>
       </header>
-      {blogTitles.map((blogTitle) => (
-        <BlogTitle
-          data={blogTitle}
-          key={blogTitle.index}
+      {blogDescripts.map((blogDescript) => (
+        <BlogRow
+          data={blogDescript}
+          key={blogDescript.index}
         />
       ))}
     </article>

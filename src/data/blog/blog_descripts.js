@@ -1,4 +1,4 @@
-const blogTitles = [
+const blogDescripts = [
   {
     index: 0,
     title: 'First Blog Post',
@@ -19,4 +19,4 @@ const blogTitles = [
   },
 ];
 
-export default blogTitles;
+export default blogDescripts;

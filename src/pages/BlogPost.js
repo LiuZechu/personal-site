@@ -2,23 +2,28 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import raw from 'raw.macro';
+import dayjs from 'dayjs';
 
 import Main from '../layouts/Main';
 
-import blogTitles from '../data/blog/blog_titles';
+import blogDescripts from '../data/blog/blog_descripts';
 
 // Make all hrefs react router links
 const LinkRenderer = ({ ...children }) => <Link {...children} />;
 
-const BlogItem = () => {
+const BlogPost = () => {
   // get URL params and markdown file to open
   // TODO: error checking for non int values!!!
   const { id } = useParams();
   let fileName = '';
-  for (let i = 0; i < blogTitles.length; i += 1) {
-    const blogTitle = blogTitles[i];
-    if (blogTitle.index === parseInt(id, 10)) {
-      fileName = blogTitle.file;
+  let blogTitle = '';
+  let postDate = '';
+  for (let i = 0; i < blogDescripts.length; i += 1) {
+    const blogDescript = blogDescripts[i];
+    if (blogDescript.index === parseInt(id, 10)) {
+      fileName = blogDescript.file;
+      blogTitle = blogDescript.title;
+      postDate = blogDescript.date;
       break;
     }
   }
@@ -29,17 +34,22 @@ const BlogItem = () => {
   const count = markdown.split(/\s+/)
     .map((s) => s.replace(/\W/g, ''))
     .filter((s) => s.length).length;
+  const readingTime = Math.ceil(count / 200); // In minutes
 
   return (
     <Main
-      title="BlogItem"
+      title="BlogPost"
       description="One of Liu Zechu's Blog Posts"
     >
       <article className="post markdown" id="post">
+        <ul className="actions">
+          <li><Link to="/blog" className="button">&lt;&lt; Read other posts</Link></li>
+        </ul>
         <header>
           <div className="title">
-            <h2 data-testid="heading"><Link to="/xxxxxx">Blog</Link></h2>
-            <p>(in about {count} words)</p>
+            <h2 data-testid="heading">{blogTitle}</h2>
+            <p>Written {dayjs(postDate).format('D MMM YYYY')}</p>
+            <p>({readingTime} min read)</p>
           </div>
         </header>
         <ReactMarkdown
@@ -50,8 +60,15 @@ const BlogItem = () => {
           escapeHtml={false}
         />
       </article>
+      <ul className="actions">
+        <li>
+          <button onClick={() => window.scrollTo(0, 0)} type="button">
+            Back to Top
+          </button>
+        </li>
+      </ul>
     </Main>
   );
 };
 
-export default BlogItem;
+export default BlogPost;
