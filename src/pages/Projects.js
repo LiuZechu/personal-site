@@ -45,14 +45,18 @@ class Projects extends Component {
     ));
   }
 
-  getCells() {
+  getRelevantProjects() {
     // search for true active categories
     const actCat = Object.keys(this.state.buttons).reduce((cat, key) => (
       this.state.buttons[key] ? key : cat
     ), 'All');
 
     return this.state.projects
-      .filter((project) => (actCat === 'All' || project.category.includes(actCat)))
+      .filter((project) => (actCat === 'All' || project.category.includes(actCat)));
+  }
+
+  getCells() {
+    return this.getRelevantProjects()
       .map((project) => (
         <Cell
           data={project}
@@ -61,14 +65,8 @@ class Projects extends Component {
       ));
   }
 
-  // TODO: reduce redundancy here
   getNumActiveProjects() {
-    // search for true active categories
-    const actCat = Object.keys(this.state.buttons).reduce((cat, key) => (
-      this.state.buttons[key] ? key : cat
-    ), 'All');
-
-    return this.state.projects
+    return this.getRelevantProjects()
       .filter((project) => (actCat === 'All' || project.category.includes(actCat)))
       .length;
   }
@@ -83,13 +81,13 @@ class Projects extends Component {
           <header>
             <div className="title">
               <h2 data-testid="heading"><Link to="/projects">Projects</Link></h2>
-              <p>Click on a category to view related projects.</p>
+              <p>A selection of my projects.</p>
             </div>
           </header>
           <div className="skill-button-container">
             {this.getButtons()}
           </div>
-          <p>Scroll down to view all <b>{this.getNumActiveProjects()} projects</b>.</p>
+          <p>Scroll down to view all <b>{this.getNumActiveProjects()} projects</b> in this category.</p>
           {this.getCells()}
         </article>
       </Main>

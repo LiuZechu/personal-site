@@ -118,12 +118,10 @@ const projects = [
 ];
 
 const categories = [
-  ...new Set(projects.reduce((acc, { category }) => acc.concat(category), [])),
-]
-  .sort()
-  .map((category) => ({
-    name: category,
-  }));
+  ML_AI, APP, WEB, OTHER,
+].map((category) => ({
+  name: category,
+}));
 
 const data = { categories, projects };
 
