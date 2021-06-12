@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const Job = ({ data }) => (
   <article className="jobs-container">
+    <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={`${data.company}'s logo`} />
     <header>
       <h4><a href={data.link}>{data.company}</a> - {data.position}</h4>
       <p className="daterange"> {data.daterange}</p>
@@ -21,6 +22,7 @@ Job.propTypes = {
     company: PropTypes.string.isRequired,
     position: PropTypes.string.isRequired,
     daterange: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
     points: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };

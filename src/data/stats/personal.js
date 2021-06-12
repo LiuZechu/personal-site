@@ -28,7 +28,7 @@ const data = [
   {
     key: 'location',
     label: 'Current city',
-    value: 'Singapore',
+    value: 'Singapore 🇸🇬',
   },
   {
     key: 'countries',

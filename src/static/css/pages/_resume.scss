@@ -45,6 +45,14 @@
 					font-size: .9em;
 			}
 		}
+
+		img {
+			width: 5em;
+			border-radius: 50%;
+			display: block;
+			box-shadow: 0 0 0 1px _palette(accent);
+			margin-bottom: 0.5em;
+		}
 	}
 
 	.courses {
