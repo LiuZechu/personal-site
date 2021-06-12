@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import dayjs from 'dayjs';
 
-const BlogTitle = ({ data }) => (
+const BlogRow = ({ data }) => (
   <article className="degree-container">
     <header>
       <h2 className="school">
@@ -10,12 +11,12 @@ const BlogTitle = ({ data }) => (
           {data.title}
         </Link>
       </h2>
-      <p className="degree">Index: {data.index}, {data.date}</p>
+      <p className="degree">{dayjs(data.date).format('D MMM YYYY')}</p>
     </header>
   </article>
 );
 
-BlogTitle.propTypes = {
+BlogRow.propTypes = {
   data: PropTypes.shape({
     index: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
@@ -23,4 +24,4 @@ BlogTitle.propTypes = {
   }).isRequired,
 };
 
-export default BlogTitle;
+export default BlogRow;

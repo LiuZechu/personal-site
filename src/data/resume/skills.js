@@ -12,7 +12,7 @@ const OTHER = 'Tools';
 
 const skills = [
   {
-    title: 'Javascript',
+    title: 'JavaScript',
     category: [LANGUAGES, WEB_DEV],
   },
   {

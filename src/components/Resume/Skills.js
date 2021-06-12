@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 
 import CategoryButton from './Skills/CategoryButton';
 import SkillTile from './Skills/SkillTile';
+import RelevantProjects from './Skills/RelevantProjects';
+
+import data from '../../data/projects';
 
 const handleProps = ({ categories, skills }) => ({
   buttons: categories.map((cat) => cat.name).reduce((obj, key) => ({
@@ -10,12 +13,23 @@ const handleProps = ({ categories, skills }) => ({
     [key]: false,
   }), { All: true }),
   skills,
+  actSkill: null,
 });
 
 class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = handleProps({ categories: props.categories, skills: props.skills });
+  }
+
+  // FOR SKILL-RELEVANT PROJECTS!
+  handleSkillTileClick = (actSkill) => {
+    this.setState({ actSkill });
+  }
+
+  getRelevantProjects() {
+    return data.projects
+      .filter((project) => project.skills.includes(this.state.actSkill));
   }
 
   getRows() {
@@ -39,6 +53,8 @@ class Skills extends Component {
           categories={this.props.categories}
           data={skill}
           key={skill.title}
+          handleClick={this.handleSkillTileClick}
+          isActive={this.state.actSkill === skill.title}
         />
       ));
   }
@@ -63,8 +79,11 @@ class Skills extends Component {
       }), {});
       // Turn on 'All' button if other buttons are off
       buttons.All = !Object.keys(prevState.buttons).some((key) => buttons[key]);
+      // Clear the state variable `actSkill`
       return { buttons };
     });
+
+    this.setState({ actSkill: null });
   }
 
   render() {
@@ -73,7 +92,7 @@ class Skills extends Component {
         <div className="link-to" id="skills" />
         <div className="title">
           <h3>Skills</h3>
-          <p>You may click on a skill to view related projects. [TODO]
+          <p>(click on a skill to view related projects).
           </p>
         </div>
         <div className="skill-button-container">
@@ -82,6 +101,9 @@ class Skills extends Component {
         <div className="skill-row-container">
           {this.getRows()}
         </div>
+        <RelevantProjects
+          data={{ projects: this.getRelevantProjects(), skill: this.state.actSkill }}
+        />
       </div>
     );
   }
