@@ -116,7 +116,7 @@ const projects = [
     title: 'Word Sticker Bot',
     subtitle: 'Telegram bot',
     link: 'https://github.com/chaitanyabaranwal/Word-Sticker-Bot',
-    image: '/images/projects/word-sticker-bot.jpg',
+    image: '/images/projects/word-sticker-bot.png',
     date: 'Jan 2019',
     desc:
       'A Telegram bot which stylizes text sent by the user and '

@@ -109,6 +109,21 @@
 	}
 }
 
+.relevant-projects-container {
+	text-align: center;
+	margin-top: 1em;
+
+	h3 {
+		font-weight: normal;
+		text-decoration: underline;
+		text-transform: none;
+	}
+
+	h4 {
+		text-transform: none;
+	}
+}
+
 .courses .course-number {
 	display: inline;
 }

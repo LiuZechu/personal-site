@@ -24,14 +24,12 @@ class Skills extends Component {
 
   // FOR SKILL-RELEVANT PROJECTS!
   handleSkillTileClick = (actSkill) => {
-    console.log("HERE");
     this.setState({ actSkill });
   }
 
   getRelevantProjects() {
     return data.projects
-      .filter((project) => project.skills.includes(this.state.actSkill))
-      .map((project) => project.title);
+      .filter((project) => project.skills.includes(this.state.actSkill));
   }
 
   getRows() {
@@ -56,6 +54,7 @@ class Skills extends Component {
           data={skill}
           key={skill.title}
           handleClick={this.handleSkillTileClick}
+          isActive={this.state.actSkill === skill.title}
         />
       ));
   }
@@ -80,8 +79,11 @@ class Skills extends Component {
       }), {});
       // Turn on 'All' button if other buttons are off
       buttons.All = !Object.keys(prevState.buttons).some((key) => buttons[key]);
+      // Clear the state variable `actSkill`
       return { buttons };
     });
+
+    this.setState({ actSkill: null });
   }
 
   render() {
@@ -90,7 +92,7 @@ class Skills extends Component {
         <div className="link-to" id="skills" />
         <div className="title">
           <h3>Skills</h3>
-          <p>You may click on a skill to view related projects. [TODO]
+          <p>(click on a skill to view related projects).
           </p>
         </div>
         <div className="skill-button-container">
@@ -99,7 +101,9 @@ class Skills extends Component {
         <div className="skill-row-container">
           {this.getRows()}
         </div>
-        <RelevantProjects data={{ projects: this.getRelevantProjects() }} />
+        <RelevantProjects
+          data={{ projects: this.getRelevantProjects(), skill: this.state.actSkill }}
+        />
       </div>
     );
   }
