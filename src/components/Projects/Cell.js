@@ -6,6 +6,7 @@ const Cell = ({ data }) => (
     <article className="mini-post">
       <header>
         <h3><a href={data.link}>{data.title}</a></h3>
+        <h4 className="subtitle">{data.subtitle}</h4>
         <time className="published">{data.date}</time>
       </header>
       <a href={data.link} className="image">
@@ -21,6 +22,7 @@ const Cell = ({ data }) => (
 Cell.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
     link: PropTypes.string,
     image: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,

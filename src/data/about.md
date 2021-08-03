@@ -6,7 +6,7 @@ I enjoy learning new technologies, exploring exciting ideas, and solving challen
 
 # Currently
 
-I'm in my 4th year of undergraduate studies in [National University of Singapore (NUS)](https://nus.edu.sg/), majoring in Computer Science. I'm also part of the [University Scholars Programme (USP)](https://www.usp.nus.edu.sg/), a four-year academic programme offering a diverse range of interdisciplinary modules that focus on writing and critifical thinking skills, intellectual curiosity, reflective thinking and asking questions.
+I'm in my 4th year of undergraduate studies in [National University of Singapore (NUS)](https://nus.edu.sg/), majoring in Computer Science. I'm also part of the [University Scholars Programme (USP)](https://www.usp.nus.edu.sg/), a four-year academic programme offering a diverse range of interdisciplinary modules that focus on writing and critifical thinking skills, intellectual curiosity, reflective thinking and asking questions. [Some of my USP essays can be found here](https://github.com/LiuZechu/my-usp-essays).
 
 # I like
 

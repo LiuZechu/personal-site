@@ -28,8 +28,8 @@ const skills = [
     category: [WEB_DEV],
   },
   {
-    title: 'Flutter Web',
-    category: [WEB_DEV],
+    title: 'Flutter',
+    category: [WEB_DEV, MOBILE_APP_DEV],
   },
   {
     title: 'Ruby on Rails',
@@ -122,6 +122,10 @@ const skills = [
   {
     title: 'iOS Dev',
     category: [MOBILE_APP_DEV],
+  },
+  {
+    title: 'AWS/GCP',
+    category: [BACKEND],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
