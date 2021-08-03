@@ -1,5 +1,3 @@
-// TODO Add a couple lines about each project
-
 // Various project categories
 const ML_AI = 'ML/AI';
 const APP = 'Mobile App';
@@ -14,11 +12,31 @@ const projects = [
     image: '/images/projects/github.gif',
     date: 'Mar 2021 - Apr 2021',
     desc:
-      'Automatically labelling GitHub issues with NLP. '
-      + 'You may try it out on your own GitHub repo!',
+      'This project aims to automatically label GitHub issues with Natural Language Processing (NLP).'
+      + ' We explored feature extraction using "important" word counts, averaged word embeddings, and'
+      + ' sentence embeddings with Bert. We also experimented with the effects of machine information'
+      + ' present in GitHub issues and tried out various classification algorithms.'
+      + ' You may try this labeller out on your own GitHub repo!',
     category: [ML_AI],
     skills: ['Python', 'Natural Language Processing (NLP)', 'Numpy',
       'Pandas', 'Tensorflow + Keras', 'Scikit-Learn'],
+  },
+  {
+    title: 'How to cross the road like a pro',
+    subtitle: 'Deep Q Learning with reward shaping and curriculum learning',
+    link: 'https://github.com/LiuZechu/CS4246-mini-project',
+    image: '/images/projects/dqn.jpg',
+    date: 'Apr 2021',
+    desc:
+      'This mini project aims to create an agent that can cross a road '
+      + 'with 10 lanes, each lane having a length of 50. There are numerous '
+      + 'cars on each lane having randomised starting positions and speeds.'
+      + ' The agent uses models trained '
+      + 'from Deep Q Learning with reward shaping and curriculum learning to solve'
+      + ' the problem of sparse reward and slow learning.'
+      + ' (cover image credit: https://media.wired.com/)',
+    category: [ML_AI],
+    skills: ['Python', 'Numpy', 'PyTorch', 'Reinforcement Learning'],
   },
   {
     title: 'Playlister: Music Recommendation',
@@ -27,11 +45,23 @@ const projects = [
     image: '/images/projects/playlister.png',
     date: 'Sep 2020 - Dec 2020',
     desc:
-      'Worked on a Machine Learning project that aims to recommend songs to users. '
-      + 'Mainly in charge of implementing Convolutional Neural Network '
+      'This Machine Learning project aims to recommend songs to users. '
+      + 'I was mainly in charge of implementing Convolutional Neural Network '
       + 'for music genre classification.',
     category: [ML_AI],
     skills: ['Python', 'Numpy', 'Pandas', 'Tensorflow + Keras', 'Scikit-Learn'],
+  },
+  {
+    title: 'Four2Ten',
+    subtitle: 'Multi-player, cross-platform mobile game built with Flutter',
+    link: 'https://github.com/Four2Ten/4210',
+    image: '/images/projects/4210.jpg',
+    date: 'Dec 2020 - Aug 2021',
+    desc:
+      'In this game, you will use addition, subtraction, multiplication and division to '
+      + 'form ten (10) with the given digits while competing with your friends and see who\'s the fastest!',
+    category: [APP],
+    skills: ['JavaScript', 'Node.JS', 'Dart', 'Flutter', 'AWS/GCP'],
   },
   {
     title: 'Dish Out',
@@ -40,10 +70,23 @@ const projects = [
     image: '/images/projects/dishout.gif',
     date: 'Sep 2020 - Dec 2020',
     desc:
-      'Worked with teammates and developed a web app that focuses on '
+      'This web app focuses on '
       + 'dish reviews and recommendations in Singapore. (completed under CS3216)',
     category: [WEB],
     skills: ['JavaScript', 'React', 'SQL/PostgreSQL', 'Heroku', 'Node.JS', 'HTML + CSS'],
+  },
+  {
+    title: 'Whoosh',
+    subtitle: 'Progressive Web App (PWA) that facilitates virtual queuing for restaurant diners',
+    link: 'https://github.com/LiuZechu/whoosh',
+    image: '/images/projects/whoosh.png',
+    date: 'Aug 2020 - Sep 2020',
+    desc:
+      'This Flutter web app helps restaurants create virtual queues for walk-in diners, '
+      + 'so that diners won\'t have to queue physically and will get notified when it\'s their turn.'
+      + ' (completed under CS3216)',
+    category: [WEB],
+    skills: ['Flutter', 'Dart'],
   },
   {
     title: 'Relentless',
@@ -52,9 +95,23 @@ const projects = [
     image: '/images/projects/relentless.jpg',
     date: 'Mar 2020 - May 2020',
     desc:
-      'Developed with teammates Relentless, a co-op multiplayer iOS game '
+      'Relentless is a co-op multiplayer iOS game '
       + 'across multiple iOS devices over the network, '
       + 'where players work together to deliver items to households. '
+      + '(completed under CS3217)',
+    category: [APP],
+    skills: ['iOS Dev', 'Swift'],
+  },
+  {
+    title: 'Peggle',
+    subtitle: 'iOS game with a Physics Engine that I built from scratch',
+    link: 'https://github.com/LiuZechu/peggle-game',
+    image: '/images/projects/peggle.jpg',
+    date: 'Jan 2020 - Mar 2020',
+    desc:
+      'Peggle is an iOS game where the player can shoot a canon ball which '
+      + 'bounces around pegs to earn points. I built a Physics Engine '
+      + 'which handles object collision without using external libraries. '
       + '(completed under CS3217)',
     category: [APP],
     skills: ['iOS Dev', 'Swift'],
@@ -74,7 +131,7 @@ const projects = [
   {
     title: 'Petopia',
     subtitle: 'Pet care service built with Vue.js and PostgreSQL',
-    link: 'https://github.com/NUS-CS2102-Database-Systems/CS2102_2021_S1_54',
+    link: 'https://github.com/LiuZechu/pet-care-service',
     image: '/images/projects/petopia.jpg',
     date: 'Sep 2020 - Dec 2020',
     desc:
@@ -91,7 +148,7 @@ const projects = [
     image: '/images/projects/jars.jpg',
     date: 'May 2019 - Aug 2019',
     desc:
-      'Developed an Android app that automatically forms flashcards '
+      'Jars is an Android app where users can automatically create flashcards '
       + 'from highlighting sentences while reading. '
       + 'The flashcards are reviewed according to spaced '
       + 'repetition that increases memory retention. '
@@ -106,7 +163,7 @@ const projects = [
     image: '/images/projects/planit.jpg',
     date: 'Dec 2018 - Jan 2019',
     desc:
-      'Developed a web app with user sign-in feature that '
+      'I developed a web app with user sign-in feature that '
       + 'keeps track of user’s to-do tasks, allows basic CRUD operations, '
       + 'and classifies tasks according to tags.',
     category: [WEB],
@@ -116,7 +173,7 @@ const projects = [
     title: 'Word Sticker Bot',
     subtitle: 'Telegram bot',
     link: 'https://github.com/chaitanyabaranwal/Word-Sticker-Bot',
-    image: '/images/projects/word-sticker-bot.png',
+    image: '/images/projects/word-sticker-bot.jpg',
     date: 'Jan 2019',
     desc:
       'A Telegram bot which stylizes text sent by the user and '

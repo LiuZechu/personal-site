@@ -41,7 +41,7 @@ const data = [
   },
   {
     label: 'Page views (based on Google Analytics; not updated real-time)',
-    value: '41',
+    value: '63',
   },
   // {
   //   // TODO update this with a pre-commit hook

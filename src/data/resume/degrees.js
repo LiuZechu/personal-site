@@ -5,8 +5,8 @@ const degrees = [
     link: 'https://nus.edu.sg/',
     year: 'Aug 2018 - Jun 2022',
     points: [
-      'Cumulative GPA: 4.91 (out of 5)',
-      'School of Computing Dean\'s List, AY 2019/2020 Semesters 1 & 2, AY 2020/2021 Semester 1',
+      'Cumulative GPA: 4.91 out of 5, on track to graduate with Honours (Highest Distinction / First Class)',
+      'School of Computing Dean\'s List for 4 consecutive semesters, AY 2019/2020 and AY 2020/2021',
     ],
   },
   {
@@ -28,7 +28,7 @@ const degrees = [
     year: 'Jul 2019',
     points: [
       'Attended Cambridge International Summer Programmes',
-      'Took the course "Managing the world: international politics and the global order".',
+      'Took the course "Managing the world: international politics and the global order"',
     ],
   },
   {
@@ -50,6 +50,7 @@ const degrees = [
     year: 'Jan 2013 - Dec 2015',
     points: [
       'National Civil Defence Cadet Corps (NCDCC)',
+      'Recipient of the Barry Desker Award, 2015',
     ],
   },
 ];
