@@ -4,21 +4,23 @@ import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
 
 import Education from '../components/Resume/Education';
+import Research from '../components/Resume/Research';
 import Experience from '../components/Resume/Experience';
 import Skills from '../components/Resume/Skills';
 import Courses from '../components/Resume/Courses';
 
 import courses from '../data/resume/courses';
 import degrees from '../data/resume/degrees';
+import research from '../data/resume/research';
 import positions from '../data/resume/positions';
 import { skills, categories } from '../data/resume/skills';
 
 const sections = [
   'Education',
+  'Research',
   'Experience',
   'Skills',
   'Courses',
-  // 'References',
 ];
 
 const Resume = () => (
@@ -40,10 +42,10 @@ const Resume = () => (
         </div>
       </header>
       <Education data={degrees} />
+      <Research data={research} />
       <Experience data={positions} />
       <Skills skills={skills} categories={categories} />
       <Courses data={courses} />
-
     </article>
   </Main>
 );

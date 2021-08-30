@@ -32,7 +32,7 @@ const data = [
   },
   {
     key: 'countries',
-    label: 'Countries/Territories visited',
+    label: 'Countries/Regions visited',
     value: Object.keys(mapData).length,
     // link:
     //   'https://www.google.com/maps/d/embed?mid=1iBBTscqateQ93pWFVfHCUZXoDu8&z=2',
