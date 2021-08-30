@@ -10,7 +10,7 @@ const positions = [
       'Implemented DDoS simulation tool',
       'Set up virtual private clouds (VPCs) on different cloud platforms and configured Generic Routing Encapsulation (GRE) tunnels to connect them via Cloudflare.',
       'Built web applications on serverless platform',
-      'Conducted webinars on technical deep dives into products'
+      'Conducted webinars on technical deep dives into products',
     ],
   },
   {

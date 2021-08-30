@@ -25,6 +25,25 @@
 			margin-bottom: 2em;
 		}
 	}
+
+	.research {
+		.title {
+			text-align: center;
+		}
+	}
+
+	.research-container {
+		h5 {
+			display: block;
+      font-family: "Raleway", Helvetica, sans-serif;
+      font-size: 0.65em;
+      font-weight: _font(weight-heading);
+      letter-spacing: _font(kerning-heading);
+      margin: 1em 0 (_size(element-margin) * 0.85) 0;
+      text-transform: none;
+		}
+	}
+
 	.experience {
 		.title {
 			text-align: center;
@@ -88,6 +107,11 @@
 
 .daterange {
 	margin-bottom: .2em;
+}
+
+.keywords {
+	margin-bottom: .2em;
+	text-transform: none;
 }
 
 .degree-container {
