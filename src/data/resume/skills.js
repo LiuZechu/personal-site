@@ -88,6 +88,10 @@ const skills = [
     category: [LANGUAGES],
   },
   {
+    title: 'Go',
+    category: [LANGUAGES],
+  },
+  {
     title: 'LATEX',
     category: [OTHER],
   },
