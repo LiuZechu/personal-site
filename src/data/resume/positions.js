@@ -6,8 +6,11 @@ const positions = [
     daterange: 'May 2021 - Aug 2021',
     image: '/images/logos/cloudflare.jpg',
     points: [
-      'Currently interning.',
-      'Will update soon.',
+      'Helped the team better serve customers through building proof-of-concept solutions.',
+      'Implemented DDoS simulation tool',
+      'Set up virtual private clouds (VPCs) on different cloud platforms and configured Generic Routing Encapsulation (GRE) tunnels to connect them via Cloudflare.',
+      'Built web applications on serverless platform',
+      'Conducted webinars on technical deep dives into products'
     ],
   },
   {
