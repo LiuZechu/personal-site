@@ -1,10 +1,14 @@
 # Personal Website
-See: [zechu.me](https://zechu.me).
+See: [liuzechu.github.io/personal-site](https://liuzechu.github.io/personal-site).
 
-Welcome to my personal website built with React and deployed on GitHub Pages. You may access it at [zechu.me](https://zechu.me/). 
+Welcome to my personal website built with React and deployed on GitHub Pages. You may access it at [liuzechu.github.io/personal-site](https://liuzechu.github.io/personal-site). 
 
 The website was adapted from [this repo](https://github.com/mldangelo/personal-site).
 
+To deploy, just run this command from whatever branch, and everything will work fine:
+```bash
+npm run deploy
+```
 
 # Below is the original README of the repo from which this repo was forked
 See: [mldangelo.com](https://mldangelo.com).
