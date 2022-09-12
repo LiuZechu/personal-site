@@ -7,10 +7,10 @@ const positions = [
     image: '/images/logos/cloudflare.jpg',
     points: [
       'Helped the team better serve customers through building proof-of-concept solutions.',
-      'Implemented DDoS simulation tool',
+      'Implemented DDoS simulation tool.',
       'Set up virtual private clouds (VPCs) on different cloud platforms and configured Generic Routing Encapsulation (GRE) tunnels to connect them via Cloudflare.',
-      'Built web applications on serverless platform',
-      'Conducted webinars on technical deep dives into products',
+      'Built web applications on serverless platform.',
+      'Conducted webinars on technical deep dives into products.',
     ],
   },
   {
@@ -21,7 +21,7 @@ const positions = [
     image: '/images/logos/hope-technik.jpg',
     points: [
       'Built an Android app integrated with WebRTC real-time video streaming and a fingerprint scanner.',
-      'Implemented REST API server that facilitates communication between Robot Operating System (ROS) and Android',
+      'Implemented REST API server that facilitates communication between Robot Operating System (ROS) and Android.',
     ],
   },
   {
